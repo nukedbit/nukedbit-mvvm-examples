@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ViewBase x:TypeArguments="viewModels:ThirdViewModel" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:NukedBit.Mvvm.Views;assembly=NukedBit.Mvvm"
+             xmlns:viewModels="clr-namespace:MvvmExample.ViewModels;assembly=MvvmExample"
+             x:Class="MvvmExample.iOS.Views.ThirdView">
+  <Grid>
+        <StackLayout>
+            <Label Text="{Binding Title}" HorizontalOptions="Center"></Label>
+            <Button Command="{Binding Path=NextCommand}" x:Name="ShowButton" Text="Go Home" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+        </StackLayout>
+    </Grid>
+</views:ViewBase>
